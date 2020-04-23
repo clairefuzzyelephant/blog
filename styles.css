@@ -1,0 +1,35 @@
+html {
+    background-color: rgba(255, 235, 243, 0.3);
+    height: 100vw;
+    position: relative;
+    cursor: url(totoro.png) 2 2, auto;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    width: 200px;
+    height: 200px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: pink;
+    box-shadow: 5px 5px 8px 10px rgba(255, 173, 206);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sidebar img {
+    border-radius: 50px;
+}
+
+.musicplayer audio{
+    margin-top: 25vh;
+    margin-left: calc(200px + 50vw - 300px);
+    width: 300px;
+}
