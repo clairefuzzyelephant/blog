@@ -8,8 +8,8 @@ html {
 
 .sidebar {
     position: absolute;
-    margin-left: 5vw;
-    margin-top: 5vw;
+    left: 5vw;
+    top: 5vw;
     width: 200px;
     height: 200px;
     outline-style: solid;
@@ -21,6 +21,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0.8;
     
 }
 
@@ -28,8 +29,26 @@ html {
     border-radius: 50px;
 }
 
-.musicplayer audio{
-    margin-top: 25vh;
-    margin-left: calc(200px + 50vw - 300px);
-    width: 300px;
+.musicplayer {
+    position: absolute;
+    top: 150px;
+    left: calc(calc(200px + 5vw) * 1.75);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(255, 224, 224);
+    box-shadow: 5px 5px 8px 10px rgb(255, 224, 224);
 }
+
+.musicplayer iframe {
+    width: 600px;
+    height: 450px;
+    opacity: 0.8;
+}
+
+
