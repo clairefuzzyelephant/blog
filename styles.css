@@ -4,8 +4,12 @@ html {
     background-color: rgba(255, 235, 243, 0.3);
     height: 100vw;
     position: relative;
-    cursor: url(totoro.png) 2 2, auto;
+    /* cursor: url(totoro.png) 2 2, auto; */
     overflow: hidden;
+}
+
+html:hover {
+    cursor: url(totoro.png) 2 2, auto;
 }
 
 .sidebar {
@@ -34,8 +38,8 @@ html {
 .movieRecommender {
     position: absolute;
     top: calc(5vh + 200px + 10vh);
-    left: calc(5vw + 100px - 4vw + 20px);
-    width: 8vw;
+    left: calc(5vw + 100px - 75px + 20px);
+    width: 150px;
     height: 200px;
     border-radius: 10px;
     display: flex;
@@ -46,6 +50,7 @@ html {
 .movieRecommender button {
     background-color: rgba(255, 255, 255, 0.6);
     font-family: 'Karla', sans-serif;
+    width: 150px;
     padding: 5px;
     border-radius: 10px;
     border-style: solid;
@@ -62,8 +67,12 @@ html {
     display: none;
     position: fixed;
     z-index: 1;
-    width: 8vw;
+    width: 150px;
     margin-top: 50px;
+}
+
+.moviePopup:hover {
+    cursor: pointer;
 }
 
 .popupContent {
@@ -82,6 +91,12 @@ html {
 
 .popupContent button {
     box-shadow: none;
+    width: 50px;
+    z-index: 5;
+}
+
+.popupContent button:hover {
+    cursor: pointer;
 }
 
 

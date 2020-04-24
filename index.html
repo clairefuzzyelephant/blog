@@ -32,22 +32,16 @@
 
         <script>
           var movies = ["The Tale of Princess Kaguya", "A Silent Voice (Koe no Katachi)", "When Marnie Was There", "Your Name", "Spirited Away", "Porco Rosso"];
-            document.getElementById("mov").innerHTML = movies[Math.floor(Math.random() * movies.length)];
-            console.log("HELLO!");
             var pop = document.getElementById("popup");
             var btn = document.getElementById("movieButton");
             var closing = document.getElementsByClassName("close")[0];
 
             btn.onclick = function() {
               pop.style.display = "block";
+              document.getElementById("mov").innerHTML = movies[Math.floor(Math.random() * movies.length)];
             }
             closing.onclick = function() {
               pop.style.display = "none";
-            }
-            window.onclick = function(event) {
-              if (event.target == pop) {
-                pop.style.display = "none";
-              }
             }
         </script>
 
